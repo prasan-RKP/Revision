@@ -1,5 +1,6 @@
-// Q.1) Even/Odd Numbers
+// -----------------  Segment - 1 ------------
 
+// Q.1) Even/Odd Numbers
 let a = 45;
 if (a === 0) {
   console.log("The number is ZERO");
@@ -61,3 +62,47 @@ const countVowels = () => {
 };
 
 console.log(countVowels());
+
+// ----------------- Segement 2 -----------
+
+// Q.1) convert  this [1,2,3,4]  → [1,4,9,16] using map.
+
+let nums = [1, 2, 3, 4];
+nums = nums.map((num) => num * num);
+console.log(nums);
+
+// Q.2) Return only Even numbers from [1,2,3,4]
+
+let evenArr = nums.filter((num) => num % 2 === 0);
+console.log(evenArr);
+
+// Q.3) use reduce to sum of the array
+let sum = nums.reduce((prev, curr) => prev + curr, 0);
+console.log("Total sum", sum);
+
+// Q.4) [{name:"A", age:20}, {name:"B", age:25}]  -> into array of only names using map.
+
+let arrObjs = [
+  { name: "A", age: 20 },
+  { name: "B", age: 25 },
+];
+
+let names = arrObjs.map((obj) => obj.name);
+console.log(names);
+
+// Q.4) Sort an array of numbers without using .sort().
+
+let sortNums = [1, 45, 23, 56, 78, 2, 21];
+let length = sortNums.length;
+
+for (let i = 0; i < length; i++) {
+  for (let j = 0; j < length - i - 1; j++) {
+    if (sortNums[j] > sortNums[j + 1]) {
+      let temp = sortNums[j];
+      sortNums[j] = sortNums[j + 1];
+      sortNums[j + 1] = temp;
+    }
+  }
+}
+
+console.log(sortNums);
