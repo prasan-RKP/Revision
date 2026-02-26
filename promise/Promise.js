@@ -86,4 +86,21 @@ getUser(1, (user)=> {
 // .catch(err => console.log(err))
 
 
-//
+//Q.2) 
+
+// function checkNumber(num) {
+//   return new Promise((resolve, reject) => {
+//       if(num > 10) {
+//         resolve("Number is Big");
+//       }
+
+//       else{
+//         reject("Number is small");
+//       }
+//   })
+// }
+
+// checkNumber(6).then((res)=> console.log(res)).catch((err)=> console.log(err))
+
+
+// Q.3) 
