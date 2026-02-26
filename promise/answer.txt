@@ -1,0 +1,7 @@
+
+1) Pending, fulfilled, rejected
+2)No
+3)it skips to the next line
+4)it will print the normal value.
+5) it will print the newPromise value then the old one 
+6) no idea abou the answer
